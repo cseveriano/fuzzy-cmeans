@@ -7,4 +7,6 @@ import Cluster
 
 data = sio.loadmat('fcm_dataset.mat')
 
-Cluster.c_means(4,data["x"])
+#Cluster.c_means(4,data["x"])
+
+Cluster.fuzzy_c_means(4,data["x"],2)
